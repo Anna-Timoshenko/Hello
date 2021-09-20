@@ -1,0 +1,17 @@
+/Users/antimoshenko/Projects/HelloTask/Hello/obj/Debug/netstandard2.1/Hello.csproj.AssemblyReference.cache
+/Users/antimoshenko/Projects/HelloTask/Hello/obj/Debug/netstandard2.1/Hello.GeneratedMSBuildEditorConfig.editorconfig
+/Users/antimoshenko/Projects/HelloTask/Hello/obj/Debug/netstandard2.1/Hello.AssemblyInfoInputs.cache
+/Users/antimoshenko/Projects/HelloTask/Hello/obj/Debug/netstandard2.1/Hello.AssemblyInfo.cs
+/Users/antimoshenko/Projects/HelloTask/Hello/obj/Debug/netstandard2.1/Hello.csproj.CoreCompileInputs.cache
+/Users/antimoshenko/Projects/HelloTask/Hello/bin/Debug/netstandard2.1/Hello.deps.json
+/Users/antimoshenko/Projects/HelloTask/Hello/bin/Debug/netstandard2.1/Hello.dll
+/Users/antimoshenko/Projects/HelloTask/Hello/bin/Debug/netstandard2.1/Hello.pdb
+/Users/antimoshenko/Projects/HelloTask/Hello/obj/Debug/netstandard2.1/Hello.dll
+/Users/antimoshenko/Projects/HelloTask/Hello/obj/Debug/netstandard2.1/Hello.pdb
+/Users/antimoshenko/Documents/GitHub/Hello/Hello/obj/Debug/netstandard2.1/Hello.csproj.AssemblyReference.cache
+/Users/antimoshenko/Documents/GitHub/Hello/Hello/obj/Debug/netstandard2.1/Hello.GeneratedMSBuildEditorConfig.editorconfig
+/Users/antimoshenko/Documents/GitHub/Hello/Hello/obj/Debug/netstandard2.1/Hello.AssemblyInfoInputs.cache
+/Users/antimoshenko/Documents/GitHub/Hello/Hello/obj/Debug/netstandard2.1/Hello.AssemblyInfo.cs
+/Users/antimoshenko/Documents/GitHub/Hello/Hello/obj/Debug/netstandard2.1/Hello.csproj.CoreCompileInputs.cache
+/Users/antimoshenko/Documents/GitHub/Hello/Hello/obj/Debug/netstandard2.1/Hello.dll
+/Users/antimoshenko/Documents/GitHub/Hello/Hello/obj/Debug/netstandard2.1/Hello.pdb

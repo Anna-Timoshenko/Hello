@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{5B8B8469-6333-4DC2-B99E-348BCB8B8B24}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.ItemProperties.HelloDroid PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Hello/ViewModels/MainPageViewModel.cs">
+    <Files>
+      <File FileName="Hello/ViewModels/MainPageViewModel.cs" Line="7" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HelloTask" expanded="True">
+            <Node name="Hello" expanded="True">
+              <Node name="ViewModels" expanded="True">
+                <Node name="MainPageViewModel.cs" selected="True" />
+              </Node>
+            </Node>
+            <Node name="HelloDroid" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.HelloIOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget." />
+</Properties>
