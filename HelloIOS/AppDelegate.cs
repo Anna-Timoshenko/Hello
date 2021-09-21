@@ -19,6 +19,8 @@ namespace HelloIOS
             return result;
         }
 
+        public override UIWindow Window { get; set; }
+
         protected override IBootstrapper CreateBootstrapper()
         {
             return new CustomIosBootstrapper();

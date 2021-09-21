@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{95CC0B39-D8E0-40D6-BC2E-F1FA43A8258D}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
   <MonoDevelop.Ide.ItemProperties.HelloDroid AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="HelloIOS/ViewController.designer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HelloIOS/AppDelegate.cs">
     <Files>
-      <File FileName="HelloIOS/ViewController.cs" Line="19" Column="1" />
-      <File FileName="HelloIOS/ViewController.designer.cs" Line="16" Column="23" />
-      <File FileName="HelloIOS/AppDelegate.cs" />
-      <File FileName="HelloIOS/Main.cs" />
+      <File FileName="HelloIOS/ViewController.designer.cs" Line="14" Column="3" />
+      <File FileName="HelloIOS/AppDelegate.cs" Line="22" Column="1" />
+      <File FileName="HelloIOS/Main.cs" Line="12" Column="1" />
+      <File FileName="HelloIOS/ViewController.cs" Line="14" Column="15" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,10 +14,12 @@
             <Node name="Hello" expanded="True">
               <Node name="ViewModels" expanded="True" />
             </Node>
+            <Node name="HelloDroid" expanded="True">
+              <Node name="Views" expanded="True" />
+            </Node>
             <Node name="HelloIOS" expanded="True">
-              <Node name="ViewController.cs" expanded="True">
-                <Node name="ViewController.designer.cs" selected="True" />
-              </Node>
+              <Node name="AppDelegate.cs" selected="True" />
+              <Node name="ViewController.cs" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -31,5 +33,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.HelloIOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.05613B65-3936-43A1-A5F1-43FF4763C393" />
+  <MonoDevelop.Ide.ItemProperties.HelloIOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.90F9496C-AADA-47A3-982B-1BC52AD88F72" />
 </Properties>

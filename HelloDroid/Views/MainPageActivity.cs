@@ -11,14 +11,17 @@ namespace HelloDroid.Views
     [Activity]
     public class MainPageActivity : ActivityBase<MainPageViewModel>
     {
+        private TextView? _textHello;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.activity_main);
 
-            var textHello = FindViewById<TextView>(Resource.Id.Text);
-            textHello.Text = ViewModel.HelloText;
+            _textHello = FindViewById<TextView>(Resource.Id.Text);
+
+            this.Bind(() => ViewModel.HelloText, () => _textHello.Text);
         }
     }
 }
