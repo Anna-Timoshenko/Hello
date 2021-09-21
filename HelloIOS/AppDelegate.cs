@@ -21,8 +21,7 @@ namespace HelloIOS
 
         protected override IBootstrapper CreateBootstrapper()
         {
-            //return new CustomIosBootstrapper();
-            return new CustomBootstrapper();
+            return new CustomIosBootstrapper();
         }
 
         protected override void InitializeNavigation(IContainer container)

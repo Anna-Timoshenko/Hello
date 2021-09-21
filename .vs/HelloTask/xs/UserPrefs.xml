@@ -1,19 +1,24 @@
-﻿<Properties StartupConfiguration="{5B8B8469-6333-4DC2-B99E-348BCB8B8B24}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.ItemProperties.HelloDroid PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Hello/ViewModels/MainPageViewModel.cs">
+﻿<Properties StartupConfiguration="{95CC0B39-D8E0-40D6-BC2E-F1FA43A8258D}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.ItemProperties.HelloDroid AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HelloIOS/ViewController.designer.cs">
     <Files>
-      <File FileName="Hello/ViewModels/MainPageViewModel.cs" Line="7" Column="6" />
+      <File FileName="HelloIOS/ViewController.cs" Line="19" Column="1" />
+      <File FileName="HelloIOS/ViewController.designer.cs" Line="16" Column="23" />
+      <File FileName="HelloIOS/AppDelegate.cs" />
+      <File FileName="HelloIOS/Main.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="HelloTask" expanded="True">
             <Node name="Hello" expanded="True">
-              <Node name="ViewModels" expanded="True">
-                <Node name="MainPageViewModel.cs" selected="True" />
+              <Node name="ViewModels" expanded="True" />
+            </Node>
+            <Node name="HelloIOS" expanded="True">
+              <Node name="ViewController.cs" expanded="True">
+                <Node name="ViewController.designer.cs" selected="True" />
               </Node>
             </Node>
-            <Node name="HelloDroid" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -21,9 +26,10 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <Debugger.DebugSourceFolders />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.HelloIOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget." />
+  <MonoDevelop.Ide.ItemProperties.HelloIOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.05613B65-3936-43A1-A5F1-43FF4763C393" />
 </Properties>

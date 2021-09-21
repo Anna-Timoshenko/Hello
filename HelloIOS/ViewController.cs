@@ -1,25 +1,18 @@
 ﻿using Foundation;
+using Hello.ViewModels;
+using Softeq.XToolkit.WhiteLabel.iOS;
 using System;
 using UIKit;
 
 namespace HelloIOS
 {
-    public partial class ViewController : UIViewController
+    public partial class ViewController : ViewControllerBase<MainPageViewModel>
     {
         public ViewController(IntPtr handle) : base(handle)
         {
+            LabelH.Text = ViewModel.HelloText;
         }
 
-        public override void ViewDidLoad()
-        {
-            base.ViewDidLoad();
-            // Perform any additional setup after loading the view, typically from a nib.
-        }
 
-        public override void DidReceiveMemoryWarning()
-        {
-            base.DidReceiveMemoryWarning();
-            // Release any cached data, images, etc that aren't in use.
-        }
     }
 }
