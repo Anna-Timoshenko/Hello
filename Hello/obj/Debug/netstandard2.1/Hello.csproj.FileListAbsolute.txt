@@ -17,3 +17,4 @@
 /Users/antimoshenko/Documents/GitHub/Hello/Hello/obj/Debug/netstandard2.1/Hello.csproj.CoreCompileInputs.cache
 /Users/antimoshenko/Documents/GitHub/Hello/Hello/obj/Debug/netstandard2.1/Hello.dll
 /Users/antimoshenko/Documents/GitHub/Hello/Hello/obj/Debug/netstandard2.1/Hello.pdb
+/Users/antimoshenko/Documents/GitHub/Hello/Hello/obj/Debug/netstandard2.1/Hello.csproj.AssemblyReference.cache

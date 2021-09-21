@@ -815,3 +815,7 @@
 /Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/stamp/_GenerateJavaStubs.stamp
 /Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/stamp/_GeneratePackageManagerJava.stamp
 /Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/stamp/_ResolveLibraryProjectImports.stamp
+/Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/res/drawable/ic_add.png
+/Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/res/drawable/ic_close.png
+/Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/res/layout/activity_add_collar_pair.xml
+/Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/android/src/crc640cab7ec18c298b9f/AddCollarPairActivity.java

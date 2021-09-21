@@ -1,11 +1,12 @@
-﻿<Properties StartupConfiguration="{95CC0B39-D8E0-40D6-BC2E-F1FA43A8258D}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+﻿<Properties StartupConfiguration="{5B8B8469-6333-4DC2-B99E-348BCB8B8B24}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
   <MonoDevelop.Ide.ItemProperties.HelloDroid AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="HelloIOS/AppDelegate.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HelloDroid/Resources/layout/activity_add_collar_pair.xml">
     <Files>
-      <File FileName="HelloIOS/ViewController.designer.cs" Line="14" Column="3" />
-      <File FileName="HelloIOS/AppDelegate.cs" Line="22" Column="1" />
-      <File FileName="HelloIOS/Main.cs" Line="12" Column="1" />
-      <File FileName="HelloIOS/ViewController.cs" Line="14" Column="15" />
+      <File FileName="HelloDroid/Resources/layout/activity_main.xml" Line="1" Column="1" />
+      <File FileName="HelloDroid/Resources/values/styles.xml" Line="15" Column="87" />
+      <File FileName="HelloDroid/Resources/layout/activity_add_collar_pair.xml" Line="11" Column="2" />
+      <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Aapt2.targets" Line="217" Column="3" />
+      <File FileName="HelloDroid/Resources/values/strings.xml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,11 +16,13 @@
               <Node name="ViewModels" expanded="True" />
             </Node>
             <Node name="HelloDroid" expanded="True">
+              <Node name="Resources" expanded="True">
+                <Node name="layout" expanded="True">
+                  <Node name="activity_add_collar_pair.xml" selected="True" />
+                </Node>
+                <Node name="mipmap-hdpi" expanded="True" />
+              </Node>
               <Node name="Views" expanded="True" />
-            </Node>
-            <Node name="HelloIOS" expanded="True">
-              <Node name="AppDelegate.cs" selected="True" />
-              <Node name="ViewController.cs" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -33,5 +36,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.HelloIOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.90F9496C-AADA-47A3-982B-1BC52AD88F72" />
+  <MonoDevelop.Ide.ItemProperties.HelloIOS PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

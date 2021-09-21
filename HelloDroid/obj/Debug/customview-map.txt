@@ -22,6 +22,7 @@ ImageButton;/Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/lp/3
 ImageButton;/Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/lp/3/jl/res/layout/dialog_full_screen_image.xml
 ImageView;/Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/lp/3/jl/res/layout/control_navigation_bar.xml
 ImageView;/Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/lp/3/jl/res/layout/dialog_full_screen_image.xml
+ImageView;obj/Debug/res/layout/activity_add_collar_pair.xml
 item;/Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/lp/3/jl/res/drawable/core_nav_bar_background.xml
 item;/Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/lp/3/jl/res/values/styles.xml
 item;obj/Debug/res/menu/menu_main.xml
@@ -29,6 +30,7 @@ item;obj/Debug/res/values/styles.xml
 layer-list;/Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/lp/3/jl/res/drawable/core_nav_bar_background.xml
 LinearLayout;/Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/lp/3/jl/res/layout/activity_bottom_navigation.xml
 LinearLayout;/Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/lp/3/jl/res/layout/control_navigation_bar.xml
+LinearLayout;obj/Debug/res/layout/activity_add_collar_pair.xml
 menu;obj/Debug/res/menu/menu_main.xml
 merge;/Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/lp/3/jl/res/layout/control_busy_overlay.xml
 path;/Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/lp/3/jl/res/drawable/core_ic_close.xml
@@ -54,6 +56,7 @@ style;/Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/lp/3/jl/re
 style;obj/Debug/res/values/styles.xml
 TextView;/Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/lp/3/jl/res/layout/control_navigation_bar.xml
 TextView;/Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/lp/3/jl/res/layout/control_notification_badge.xml
+TextView;obj/Debug/res/layout/activity_add_collar_pair.xml
 TextView;obj/Debug/res/layout/activity_main.xml
 TextView;obj/Debug/res/layout/content_main.xml
 vector;/Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/lp/3/jl/res/drawable/core_ic_close.xml
