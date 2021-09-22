@@ -94,7 +94,7 @@
           "lib/Xamarin.iOS10/WebP.Touch.dll": {}
         }
       },
-      "Xamarin.Essentials/1.6.1": {
+      "Xamarin.Essentials/1.7.0": {
         "type": "package",
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -232,7 +232,7 @@
           "lib/Xamarin.iOS10/WebP.Touch.dll": {}
         }
       },
-      "Xamarin.Essentials/1.6.1": {
+      "Xamarin.Essentials/1.7.0": {
         "type": "package",
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -370,7 +370,7 @@
           "lib/Xamarin.iOS10/WebP.Touch.dll": {}
         }
       },
-      "Xamarin.Essentials/1.6.1": {
+      "Xamarin.Essentials/1.7.0": {
         "type": "package",
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -508,7 +508,7 @@
           "lib/Xamarin.iOS10/WebP.Touch.dll": {}
         }
       },
-      "Xamarin.Essentials/1.6.1": {
+      "Xamarin.Essentials/1.7.0": {
         "type": "package",
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -769,10 +769,10 @@
         "webp.touch.nuspec"
       ]
     },
-    "Xamarin.Essentials/1.6.1": {
-      "sha512": "gG1Bp4j4bpJQ0dp9MeBJQJ9c8xULauIlhc7Cx5Qw4J2K1c+4Glq5n+gkb9Pm0UA/CevXVqLK5ZXmZkuYI52FgA==",
+    "Xamarin.Essentials/1.7.0": {
+      "sha512": "xfUJNxtfMC05VBej7fVUg6Zd9VwM2kqW9LH0tcrSA6IsBTl0EsIGkYUOz1BoKT2rseWW8o3kTi5WH/yZV4GgJw==",
       "type": "package",
-      "path": "xamarin.essentials/1.6.1",
+      "path": "xamarin.essentials/1.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -781,15 +781,6 @@
         "lib/monoandroid10.0/Xamarin.Essentials.dll",
         "lib/monoandroid10.0/Xamarin.Essentials.pdb",
         "lib/monoandroid10.0/Xamarin.Essentials.xml",
-        "lib/monoandroid80/Xamarin.Essentials.dll",
-        "lib/monoandroid80/Xamarin.Essentials.pdb",
-        "lib/monoandroid80/Xamarin.Essentials.xml",
-        "lib/monoandroid81/Xamarin.Essentials.dll",
-        "lib/monoandroid81/Xamarin.Essentials.pdb",
-        "lib/monoandroid81/Xamarin.Essentials.xml",
-        "lib/monoandroid90/Xamarin.Essentials.dll",
-        "lib/monoandroid90/Xamarin.Essentials.pdb",
-        "lib/monoandroid90/Xamarin.Essentials.xml",
         "lib/netstandard1.0/Xamarin.Essentials.dll",
         "lib/netstandard1.0/Xamarin.Essentials.pdb",
         "lib/netstandard1.0/Xamarin.Essentials.xml",
@@ -816,7 +807,7 @@
         "lib/xamarinwatchos10/Xamarin.Essentials.pdb",
         "lib/xamarinwatchos10/Xamarin.Essentials.xml",
         "readme.txt",
-        "xamarin.essentials.1.6.1.nupkg.sha512",
+        "xamarin.essentials.1.7.0.nupkg.sha512",
         "xamarin.essentials.nuspec"
       ]
     },
@@ -893,36 +884,43 @@
     "Xamarin.iOS,Version=v1.0": [
       "Hello >= 1.0.0",
       "Softeq.XToolkit.WhiteLabel >= 2.0.0-beta8",
-      "Xamarin.Essentials >= 1.6.1"
+      "Xamarin.Essentials >= 1.7.0"
     ]
   },
   "packageFolders": {
-    "/Users/antimoshenko/.nuget/packages/": {}
+    "C:\\Users\\Anna\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/antimoshenko/Documents/GitHub/Hello/HelloIOS/HelloIOS.csproj",
+      "projectUniqueName": "G:\\ANN\\Softeq\\Hello\\Hello\\HelloIOS\\HelloIOS.csproj",
       "projectName": "HelloIOS",
-      "projectPath": "/Users/antimoshenko/Documents/GitHub/Hello/HelloIOS/HelloIOS.csproj",
-      "packagesPath": "/Users/antimoshenko/.nuget/packages/",
-      "outputPath": "/Users/antimoshenko/Documents/GitHub/Hello/HelloIOS/obj/",
+      "projectPath": "G:\\ANN\\Softeq\\Hello\\Hello\\HelloIOS\\HelloIOS.csproj",
+      "packagesPath": "C:\\Users\\Anna\\.nuget\\packages\\",
+      "outputPath": "G:\\ANN\\Softeq\\Hello\\Hello\\HelloIOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "/Users/antimoshenko/.config/NuGet/NuGet.Config"
+        "C:\\Users\\Anna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/antimoshenko/Documents/GitHub/Hello/Hello/Hello.csproj": {
-              "projectPath": "/Users/antimoshenko/Documents/GitHub/Hello/Hello/Hello.csproj"
+            "G:\\ANN\\Softeq\\Hello\\Hello\\Hello\\Hello.csproj": {
+              "projectPath": "G:\\ANN\\Softeq\\Hello\\Hello\\Hello\\Hello.csproj"
             }
           }
         }
@@ -937,7 +935,7 @@
           },
           "Xamarin.Essentials": {
             "target": "Package",
-            "version": "[1.6.1, )"
+            "version": "[1.7.0, )"
           }
         }
       }
