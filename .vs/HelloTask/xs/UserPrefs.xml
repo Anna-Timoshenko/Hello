@@ -2,11 +2,8 @@
   <MonoDevelop.Ide.ItemProperties.HelloDroid AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" />
   <MonoDevelop.Ide.Workbench ActiveDocument="HelloDroid/Resources/layout/activity_add_collar_pair.xml">
     <Files>
-      <File FileName="HelloDroid/Resources/layout/activity_main.xml" Line="1" Column="1" />
-      <File FileName="HelloDroid/Resources/values/styles.xml" Line="15" Column="87" />
-      <File FileName="HelloDroid/Resources/layout/activity_add_collar_pair.xml" Line="11" Column="2" />
-      <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Aapt2.targets" Line="217" Column="3" />
-      <File FileName="HelloDroid/Resources/values/strings.xml" Line="1" Column="1" />
+      <File FileName="HelloDroid/Resources/layout/activity_add_collar_pair.xml" Line="47" Column="19" />
+      <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="1194" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,6 +18,7 @@
                   <Node name="activity_add_collar_pair.xml" selected="True" />
                 </Node>
                 <Node name="mipmap-hdpi" expanded="True" />
+                <Node name="values" expanded="True" />
               </Node>
               <Node name="Views" expanded="True" />
             </Node>

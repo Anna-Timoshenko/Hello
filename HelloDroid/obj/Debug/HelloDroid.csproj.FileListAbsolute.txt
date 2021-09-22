@@ -419,7 +419,6 @@
 /Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/MonoAndroid,Version=v11.0.AssemblyAttributes.cs
 /Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/build.props
 /Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/adb.props
-/Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/HelloDroid.csproj.AssemblyReference.cache
 /Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/stamp/_BuildLibraryImportsCache.stamp
 /Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/res.flag
 /Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/lp/3/jl/files.cache
@@ -473,6 +472,9 @@
 /Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/res/mipmap-xxxhdpi/ic_launcher.png
 /Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/res/mipmap-xxxhdpi/ic_launcher_foreground.png
 /Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/res/mipmap-xxxhdpi/ic_launcher_round.png
+/Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/res/drawable/ic_add.png
+/Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/res/drawable/ic_close.png
+/Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/res/layout/activity_add_collar_pair.xml
 /Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/uploadflags.txt
 /Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/resolvedassemblies.hash
 /Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/android/assets/DryIoc.dll
@@ -671,6 +673,7 @@
 /Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/android/src/com/google/android/material/snackbar/Snackbar_SnackbarActionClickImplementor.java
 /Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/android/src/com/softeq/xtoolkit/whitelabel/droid/BusyOverlayView.java
 /Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/android/src/com/softeq/xtoolkit/whitelabel/droid/NavigationBarView.java
+/Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/android/src/crc640cab7ec18c298b9f/AddCollarPairActivity.java
 /Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/android/src/crc640cab7ec18c298b9f/MainPageActivity.java
 /Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/android/src/crc6412bfed534a5a1fdb/ObservableAdapterExtended_1.java
 /Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/android/src/crc6412bfed534a5a1fdb/ObservableAdapter_1.java
@@ -815,7 +818,3 @@
 /Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/stamp/_GenerateJavaStubs.stamp
 /Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/stamp/_GeneratePackageManagerJava.stamp
 /Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/stamp/_ResolveLibraryProjectImports.stamp
-/Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/res/drawable/ic_add.png
-/Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/res/drawable/ic_close.png
-/Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/res/layout/activity_add_collar_pair.xml
-/Users/antimoshenko/Documents/GitHub/Hello/HelloDroid/obj/Debug/android/src/crc640cab7ec18c298b9f/AddCollarPairActivity.java

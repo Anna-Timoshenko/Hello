@@ -7,9 +7,10 @@ using Hello.ViewModels;
 
 namespace HelloDroid
 {
-    [Activity(
-    MainLauncher = true,
-    NoHistory = true)]
+    //[Activity(
+    //MainLauncher = true,
+    //NoHistory = true)]
+    [Activity]
     public class SplashActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
