@@ -78,13 +78,11 @@
 		android:drawablePadding="8dp"
 		android:fontFamily="OpenSans-Semibold"/>
 
+
     <androidx.recyclerview.widget.RecyclerView
-        android:scrollbars="vertical"
+		android:id="@+id/activity_add_collar_pair_recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/recyclerView1" />
-
-    
-
+        android:layout_height="wrap_content"
+        />
 
 </LinearLayout>

@@ -22,9 +22,13 @@ G:\ANN\Softeq\Hello\Hello\Hello\bin\Debug\netstandard2.1\Hello.deps.json
 G:\ANN\Softeq\Hello\Hello\Hello\bin\Debug\netstandard2.1\Hello.dll
 G:\ANN\Softeq\Hello\Hello\Hello\bin\Debug\netstandard2.1\Hello.pdb
 G:\ANN\Softeq\Hello\Hello\Hello\obj\Debug\netstandard2.1\Hello.csproj.AssemblyReference.cache
+G:\ANN\Softeq\Hello\Hello\Hello\obj\Debug\netstandard2.1\Hello.GeneratedMSBuildEditorConfig.editorconfig
 G:\ANN\Softeq\Hello\Hello\Hello\obj\Debug\netstandard2.1\Hello.AssemblyInfoInputs.cache
 G:\ANN\Softeq\Hello\Hello\Hello\obj\Debug\netstandard2.1\Hello.AssemblyInfo.cs
 G:\ANN\Softeq\Hello\Hello\Hello\obj\Debug\netstandard2.1\Hello.csproj.CoreCompileInputs.cache
 G:\ANN\Softeq\Hello\Hello\Hello\obj\Debug\netstandard2.1\Hello.dll
 G:\ANN\Softeq\Hello\Hello\Hello\obj\Debug\netstandard2.1\Hello.pdb
-G:\ANN\Softeq\Hello\Hello\Hello\obj\Debug\netstandard2.1\Hello.GeneratedMSBuildEditorConfig.editorconfig
+G:\ANN\Softeq\Hello\Hello\Hello\bin\Debug\netstandard2.1\Mono.Android.dll
+G:\ANN\Softeq\Hello\Hello\Hello\bin\Debug\netstandard2.1\Mono.Android.pdb
+G:\ANN\Softeq\Hello\Hello\Hello\bin\Debug\netstandard2.1\Mono.Android.xml
+G:\ANN\Softeq\Hello\Hello\Hello\obj\Debug\netstandard2.1\Hello.csproj.CopyComplete
