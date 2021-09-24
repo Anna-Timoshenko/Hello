@@ -1,4 +1,5 @@
 FFImageLoading.Platform.dll
+Hello.dll
 Softeq.XToolkit.Bindings.Droid.dll
 Softeq.XToolkit.Common.Droid.dll
 Softeq.XToolkit.WhiteLabel.Droid.dll
@@ -80,4 +81,3 @@ androidx.constraintlayout.constraintlayout.aar
 androidx.cardview.cardview.aar
 com.google.android.material.material.aar
 androidx.browser.browser.aar
-Hello.dll

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-using Softeq.XToolkit.WhiteLabel.Mvvm;
+﻿using Softeq.XToolkit.WhiteLabel.Mvvm;
 
 namespace Hello.ViewModels
 {

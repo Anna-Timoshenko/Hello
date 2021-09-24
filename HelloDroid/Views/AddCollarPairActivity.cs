@@ -1,13 +1,12 @@
-﻿using System;
-using Android.App;
+﻿using Android.App;
 using Android.OS;
 using AndroidX.RecyclerView.Widget;
 using Hello.ViewModels;
 using Hello.Models;
 using Softeq.XToolkit.WhiteLabel.Droid;
-using HelloDroid.Views.Adapters;
-using System.Collections.Generic;
-using Android.Graphics;
+using Softeq.XToolkit.Bindings.Droid.Bindable;
+using HelloDroid.Views.Collections;
+using Android.Widget;
 
 namespace HelloDroid.Views
 {
@@ -16,17 +15,11 @@ namespace HelloDroid.Views
     NoHistory = true)]
     public class AddCollarPairActivity : ActivityBase<AddCollarPairViewModel>
     {
-        private RecyclerView? _recyclerView;
-        private DogAdapter _dogAdapter;
-        private List<Dog> _dogs;
-        public AddCollarPairActivity()
-        {
-            _dogs = new List<Dog>
-            {
-                new Dog("Eva", Color.Black),
-                new Dog("Richard", Color.Yellow)
-            };
-        }
+        private RecyclerView? _recyclerViewAdded;
+        private RecyclerView? _recyclerViewDogs;
+        private TextView? _title;
+        private TextView? _textChoose;
+        private TextView? _textWitckCollars;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -34,12 +27,28 @@ namespace HelloDroid.Views
 
             SetContentView(Resource.Layout.activity_add_collar_pair);
 
-            _recyclerView = FindViewById<RecyclerView>(Resource.Id.activity_add_collar_pair_recyclerView);
+            _title = FindViewById<TextView>(Resource.Id.activity_add_collar_pair_textView_title);
+            _title.Text = ViewModel.Title;
 
-            _dogAdapter = new DogAdapter(_dogs);
+            _textChoose = FindViewById<TextView>(Resource.Id.activity_add_collar_pair_textView_choose);
+            _textChoose.Text = ViewModel.TextChoose;
 
-            _recyclerView.SetAdapter(_dogAdapter);
-            _recyclerView.SetLayoutManager(new LinearLayoutManager(this));
+            _textWitckCollars = FindViewById<TextView>(Resource.Id.activity_add_collar_pair_textView_with_color);
+            _textWitckCollars.Text = ViewModel.TextWitckCollars;
+
+
+            _recyclerViewAdded = FindViewById<RecyclerView>(Resource.Id.activity_add_collar_pair_recyclerView_added);
+            _recyclerViewAdded.HasFixedSize = true;
+            _recyclerViewAdded.SetLayoutManager(new LinearLayoutManager(this));
+            var adapterAdded = new BindableRecyclerViewAdapter<PetViewModel, DogCollectionViewHolder>(ViewModel.DogsAdded);
+            _recyclerViewAdded.SetAdapter(adapterAdded);
+
+
+            _recyclerViewDogs = FindViewById<RecyclerView>(Resource.Id.activity_add_collar_pair_recyclerView_pets);
+            _recyclerViewDogs.HasFixedSize = true;
+            _recyclerViewDogs.SetLayoutManager(new LinearLayoutManager(this));
+            var adapterDogs = new BindableRecyclerViewAdapter<PetViewModel, DogCollectionViewHolder>(ViewModel.Dogs);
+            _recyclerViewDogs.SetAdapter(adapterDogs);
         }
     }
 }

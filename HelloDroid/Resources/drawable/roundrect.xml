@@ -4,11 +4,4 @@
 
   <corners android:radius="50dp"/>
 
-  <gradient
-     
-      android:endColor="@color/material_deep_teal_200"
-      android:startColor="@color/material_deep_teal_200"
-     />
-
-
 </shape>
