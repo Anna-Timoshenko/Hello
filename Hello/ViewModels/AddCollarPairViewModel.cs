@@ -1,25 +1,38 @@
 ﻿using Hello.Collections;
 using Hello.Models;
+using Softeq.XToolkit.Common.Commands;
 using Softeq.XToolkit.WhiteLabel.Mvvm;
+using Softeq.XToolkit.WhiteLabel.Navigation;
 using System.Collections.Generic;
+using System.Windows.Input;
 
 namespace Hello.ViewModels
 {
     public class AddCollarPairViewModel : ViewModelBase
     {
-        private ICollection<PetViewModel> _dogsAdded;
-        private ICollection<PetViewModel> _dogs;
+        private ICollection<PetViewModel> _petsAdded;
+        private ICollection<PetViewModel> _pets;
+        private readonly IPageNavigationService _pageNavigationService;
 
-        public AddCollarPairViewModel()
+        public AddCollarPairViewModel(IPageNavigationService pageNavigationService)
         {
-            _dogsAdded = PetsAddedCollection.PetsAdded;
-            _dogs = PetsAddedCollection.Pets;
+            _petsAdded = PetsAddedCollection.PetsAdded;
+            _pets = PetsAddedCollection.Pets;
+            _pageNavigationService = pageNavigationService;
+            NavigateCommandBack = new RelayCommand(NavigateBack);
         }
 
-        public ICollection<PetViewModel> DogsAdded { get => _dogsAdded; }
-        public ICollection<PetViewModel> Dogs { get => _dogs; }
+        public ICommand NavigateCommandBack { get; }
+
+        public ICollection<PetViewModel> PetsAdded { get => _petsAdded; }
+        public ICollection<PetViewModel> Pets { get => _pets; }
         public string Title => "Pair Collar With a Pet";
         public string TextChoose => "Please Choose Which Pet Should Use This Collar";
         public string TextWitckCollars => "Pets With Collars";
+
+        private void NavigateBack()
+        {
+            _pageNavigationService.GoBack();
+        }
     }
 }

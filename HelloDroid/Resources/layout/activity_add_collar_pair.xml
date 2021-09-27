@@ -5,8 +5,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
     android:background="@android:color/white">
 
     <LinearLayout
@@ -27,7 +27,7 @@
             android:id="@+id/activity_add_collar_pair_textView_title"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
             android:gravity="center_vertical"
             android:layout_weight="1"
             android:text="1"
@@ -47,8 +47,8 @@
         android:id="@+id/activity_add_collar_pair_textView_choose"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="28.5dp"
-        android:layout_marginRight="27.5dp"
+        android:layout_marginStart="28.5dp"
+        android:layout_marginEnd="27.5dp"
         android:layout_marginTop="20dp"
         android:gravity="center"
         style="@style/TextViewPrimary"
@@ -60,32 +60,48 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="21dp"
-        android:gravity="left | center"
+        android:gravity="center"
         android:drawablePadding="8dp"
-        android:drawableLeft="@drawable/ic_add"
+        android:drawableStart="@drawable/ic_add"
         style="@style/NotCapsButton"
         android:text="Add New Pet"
         android:textSize="15sp"/>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/activity_add_collar_pair_recyclerView_added"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
 
-    <TextView
-        android:id="@+id/activity_add_collar_pair_textView_with_color"
+    <ScrollView
+        android:id="@+id/activity_add_collar_pair_scrollView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
-        style="@style/TextViewPrimary"
-        android:text="3"
-        android:textSize="13sp"/>
+        android:layout_height="wrap_content">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/activity_add_collar_pair_recyclerView_pets"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:padding="4dp"/>
+        <LinearLayout
+            android:id="@+id/activity_add_collar_pair_linearLayout_pets"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/activity_add_collar_pair_recyclerView_added"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/activity_add_collar_pair_textView_with_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp"
+                style="@style/TextViewPrimary"
+                android:text="3"
+                android:textSize="13sp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/activity_add_collar_pair_recyclerView_pets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="4dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

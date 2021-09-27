@@ -18,9 +18,9 @@ namespace Hello.Models
     public class PetViewModel : ObservableObject
     {
         private string _name = string.Empty;
-        private Color _color;
+        private string _color;
 
-        public PetViewModel(string name, Color color)
+        public PetViewModel(string name, string color)
         {
             Name = name;
             Color = color;
@@ -32,7 +32,7 @@ namespace Hello.Models
             set => Set(ref _name, value);
         }
 
-        public Color Color
+        public string Color
         {
             get => _color;
             set => Set(ref _color, value);

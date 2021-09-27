@@ -7,10 +7,9 @@ using Hello.ViewModels;
 
 namespace HelloDroid
 {
-    //[Activity(
-    //MainLauncher = true,
-    //NoHistory = true)]
-    [Activity]
+    [Activity(
+    MainLauncher = true,
+    NoHistory = true)]
     public class SplashActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
@@ -19,7 +18,7 @@ namespace HelloDroid
 
             // Entry point
             Dependencies.PageNavigationService
-                .For<MainPageViewModel>()
+                .For<NavigationViewModel>()
                 .Navigate();
 
             Finish();

@@ -1,8 +1,10 @@
-﻿using Android.Graphics.Drawables;
+﻿using Android.Graphics;
+using Android.Graphics.Drawables;
 using Android.Views;
 using Android.Widget;
 using Hello.Models;
 using Softeq.XToolkit.Bindings.Droid.Bindable;
+
 
 namespace HelloDroid.Views.Collections
 {
@@ -19,7 +21,6 @@ namespace HelloDroid.Views.Collections
             _name = view.FindViewById<TextView>(Resource.Id.item_list_pet_textView_name);
 
             _color.SetBackgroundResource(Resource.Drawable.roundrect);
-
             _drawable = (GradientDrawable)_color.Background;
         }
 
@@ -27,11 +28,11 @@ namespace HelloDroid.Views.Collections
         {
             base.DoAttachBindings();
 
-            _drawable.SetColor(ViewModel.Color);
+            _drawable.SetColor(Color.ParseColor(ViewModel.Color));
             _name.Text = ViewModel.Name;
         }
 
-        public View ColorDog { get => _color; }
-        public TextView Name { get => _name; }
+        public View ColorDog => _color;
+        public TextView Name => _name;
     }
 }
