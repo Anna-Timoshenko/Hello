@@ -1,5 +1,4 @@
-﻿using System;
-using Android.App;
+﻿using Android.App;
 using Android.OS;
 using AndroidX.AppCompat.App;
 using Softeq.XToolkit.WhiteLabel;

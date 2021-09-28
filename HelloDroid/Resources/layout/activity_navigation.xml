@@ -7,7 +7,7 @@
     android:gravity="center">
     <Button
         android:id="@+id/activity_navigation_button_hello"
-        android:text="Go Hello world"
+        android:text="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -15,7 +15,7 @@
         android:textSize="20sp"/>
     <Button
         android:id="@+id/activity_navigation_button_add_collar"
-        android:text="Go add collar pair"
+        android:text="2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/activity_navigation_button_hello"
@@ -25,7 +25,7 @@
 
     <Button
         android:id="@+id/activity_navigation_button_dynamic_page"
-        android:text="Go dynamic"
+        android:text="3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/activity_navigation_button_add_collar"
