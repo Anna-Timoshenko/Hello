@@ -3,7 +3,6 @@ using Android.OS;
 using Android.Widget;
 using Hello.ViewModels;
 using Softeq.XToolkit.Bindings;
-using Softeq.XToolkit.WhiteLabel;
 using Softeq.XToolkit.WhiteLabel.Droid;
 
 namespace HelloDroid.Views
@@ -29,6 +28,7 @@ namespace HelloDroid.Views
             _addCollarButton.Text = ViewModel.TextButtomAddCollar;
 
             _dynamicButton = FindViewById<Button>(Resource.Id.activity_navigation_button_dynamic_page);
+            _dynamicButton.SetCommand(ViewModel.NavigateCommandDynamic);
             _dynamicButton.Text = ViewModel.TextButtomDynamic;
         }
     }
