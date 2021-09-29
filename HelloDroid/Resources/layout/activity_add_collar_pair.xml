@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_add_collar_pair_linearLayout_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/activity_add_collar_pair_linearLayout_top"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <ImageButton
+            android:id="@+id/activity_add_collar_pair_imageButton_close"
+            android:src="@drawable/ic_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:id="@+id/activity_add_collar_pair_textView_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="1"
+            android:textSize="17sp"
+            style="@style/TextViewPrimary"/>
+
+        <Button
+            android:id="@+id/activity_add_collar_pair_button_done"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            style="@style/NotCapsButton"
+            android:text="Done"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/activity_add_collar_pair_textView_choose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28.5dp"
+        android:layout_marginEnd="27.5dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        style="@style/TextViewPrimary"
+        android:text="2"
+        android:textSize="17sp"/>
+
+    <Button
+        android:id="@+id/activity_add_collar_pair_button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:gravity="center"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_add"
+        style="@style/NotCapsButton"
+        android:text="Add New Pet"
+        android:textSize="15sp"/>
+
+
+    <ScrollView
+        android:id="@+id/activity_add_collar_pair_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/activity_add_collar_pair_linearLayout_pets"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/activity_add_collar_pair_recyclerView_added"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/activity_add_collar_pair_textView_with_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp"
+                style="@style/TextViewPrimary"
+                android:text="3"
+                android:textSize="13sp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/activity_add_collar_pair_recyclerView_pets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="4dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

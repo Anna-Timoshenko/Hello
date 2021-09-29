@@ -1,9 +1,8 @@
-﻿using System;
-using Android.App;
+﻿using Android.App;
 using Android.OS;
 using Android.Widget;
 using Hello.ViewModels;
-using Softeq.XToolkit.Bindings.Extensions;
+using Softeq.XToolkit.Bindings;
 using Softeq.XToolkit.WhiteLabel.Droid;
 
 namespace HelloDroid.Views
@@ -12,6 +11,7 @@ namespace HelloDroid.Views
     public class MainPageActivity : ActivityBase<MainPageViewModel>
     {
         private TextView? _textHello;
+        private ImageButton? _imageButtonClose;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -19,9 +19,11 @@ namespace HelloDroid.Views
 
             SetContentView(Resource.Layout.activity_main);
 
-            _textHello = FindViewById<TextView>(Resource.Id.Text);
+            _textHello = FindViewById<TextView>(Resource.Id.activity_main_textView_hello);
+            _textHello.Text = ViewModel.HelloText;
 
-            this.Bind(() => ViewModel.HelloText, () => _textHello.Text);
+            _imageButtonClose = FindViewById<ImageButton>(Resource.Id.activity_add_collar_pair_imageButton_close);
+            _imageButtonClose.SetCommand(ViewModel.NavigateCommandBack);
         }
     }
 }
