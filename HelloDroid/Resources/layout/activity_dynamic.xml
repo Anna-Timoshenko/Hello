@@ -4,8 +4,7 @@
     android:id="@+id/activity_dynamyc_relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_vertical"
-    >
+    android:gravity="center_vertical">
 
     <TextView
         android:id="@+id/activity_dynamyc_textView_switch"
@@ -33,7 +32,7 @@
         android:layout_below="@id/activity_dynamyc_switch"
         android:layout_marginTop="50dp"
         android:layout_centerHorizontal="true"
-         style="@style/TextViewPrimary"
+        style="@style/TextViewPrimary"
         android:textSize="20sp"
         />
 
@@ -73,7 +72,7 @@
         android:layout_below="@id/activity_dynamyc_linearLayout"
         android:layout_marginTop="50dp"
         android:layout_centerHorizontal="true"
-         style="@style/TextViewPrimary"
+        style="@style/TextViewPrimary"
         android:textSize="20sp"
         />
 
@@ -84,9 +83,7 @@
         android:layout_below="@id/activity_dynamyc_textView_output"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="50dp"
+        android:maxLength="20"
         />
-    
-
-
 
 </RelativeLayout>
