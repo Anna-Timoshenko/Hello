@@ -16,6 +16,8 @@ namespace Hello.ViewModels
         }
 
         public string HelloText => "Hello world";
+        public string Title => "Main Hello";
+
         public ICommand NavigateCommandBack { get; }
 
         private void NavigateBack()

@@ -7,7 +7,6 @@ using Softeq.XToolkit.Bindings.Extensions;
 using Softeq.XToolkit.WhiteLabel.Droid;
 using Hello;
 using Google.Android.Material.TextField;
-using Android.Views;
 
 namespace HelloDroid.Views
 {
@@ -21,13 +20,16 @@ namespace HelloDroid.Views
         private TextView? _textCounter;
         private TextView? _textOutput;
         private TextInputEditText? _editTextInput;
+        private CustomNavigationBarView _navigationBarView;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_dynamic);
 
-            Window.SetSoftInputMode(SoftInput.StateAlwaysHidden);
+            _navigationBarView = FindViewById<CustomNavigationBarView>(Resource.Id.activity_dynamyc_navigation_bar);
+            _navigationBarView.SetTitle(ViewModel.Title);
+            _navigationBarView.SetButtonClose(ViewModel.NavigateCommandBack);
 
             _switch = FindViewById<Switch>(Resource.Id.activity_dynamyc_switch);
 
@@ -54,7 +56,7 @@ namespace HelloDroid.Views
             this.Bind(() => ViewModel.TextSwitch, () => _textSwitch.Text);
             this.Bind(() => ViewModel.Counter, () => _textCounter!.Text, IntToStringConverter.Instance);
             this.Bind(() => ViewModel.TextOutput, () => _textOutput!.Text);
-            this.Bind(() => _editTextInput!.Text, () => ViewModel.TextOutput);
+            this.Bind(() => ViewModel.TextOutput, () => _editTextInput!.Text, BindingMode.TwoWay);
         }
     }
 }

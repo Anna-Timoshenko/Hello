@@ -2,7 +2,6 @@
 using Android.OS;
 using Android.Widget;
 using Hello.ViewModels;
-using Softeq.XToolkit.Bindings;
 using Softeq.XToolkit.WhiteLabel.Droid;
 
 namespace HelloDroid.Views
@@ -11,7 +10,7 @@ namespace HelloDroid.Views
     public class MainPageActivity : ActivityBase<MainPageViewModel>
     {
         private TextView? _textHello;
-        private ImageButton? _imageButtonClose;
+        private CustomNavigationBarView _navigationBarView;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -22,8 +21,9 @@ namespace HelloDroid.Views
             _textHello = FindViewById<TextView>(Resource.Id.activity_main_textView_hello);
             _textHello.Text = ViewModel.HelloText;
 
-            _imageButtonClose = FindViewById<ImageButton>(Resource.Id.activity_add_collar_pair_imageButton_close);
-            _imageButtonClose.SetCommand(ViewModel.NavigateCommandBack);
+            _navigationBarView = FindViewById<CustomNavigationBarView>(Resource.Id.activity_main_navigation_bar);
+            _navigationBarView.SetTitle(ViewModel.Title);
+            _navigationBarView.SetButtonClose(ViewModel.NavigateCommandBack);
         }
     }
 }
