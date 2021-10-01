@@ -14,10 +14,12 @@ namespace Hello.ViewModels
             _pageNavigationService = pageNavigationService;
             NavigateCommandHello = new RelayCommand(NavigateMain);
             NavigateCommandAddCollar = new RelayCommand(NavigateAddCollar);
+            NavigateCommandDynamic = new RelayCommand(NavigateDymanic);
         }
 
         public ICommand NavigateCommandHello { get; }
         public ICommand NavigateCommandAddCollar { get; }
+        public ICommand NavigateCommandDynamic { get; }
 
         public string TextButtomHello => "Go Hello world";
         public string TextButtomAddCollar => "Go add collar pair";
@@ -35,6 +37,11 @@ namespace Hello.ViewModels
         private void NavigateAddCollar()
         {
             _pageNavigationService.For<AddCollarPairViewModel>().Navigate();
+        }
+
+        private void NavigateDymanic()
+        {
+            _pageNavigationService.For<DynamicViewModel>().Navigate();
         }
     }
 }
