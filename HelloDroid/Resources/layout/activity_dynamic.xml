@@ -45,16 +45,13 @@
             android:id="@+id/activity_dynamyc_button_plus"
             android:text="+"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true" />
+            android:layout_height="wrap_content"/>
 
         <Button
             android:id="@+id/activity_dynamyc_button_minus"
             android:text="-"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/activity_dynamyc_button_plus"
-            android:layout_centerHorizontal="true" />
+            android:layout_height="wrap_content"/>
 
     </LinearLayout>
 
