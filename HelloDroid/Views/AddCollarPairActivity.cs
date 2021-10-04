@@ -27,7 +27,6 @@ namespace HelloDroid.Views
 
             _navigationBarView = FindViewById<CustomNavigationBarView>(Resource.Id.activity_add_collar_pair_navigation_bar);
             _navigationBarView.SetTitle(ViewModel.Title);
-            _navigationBarView.SetButtonRight(ViewModel.TextForRightButton);
             _navigationBarView.SetButtonClose(ViewModel.NavigateCommandBack);
 
             _textChoose = FindViewById<TextView>(Resource.Id.activity_add_collar_pair_textView_choose);

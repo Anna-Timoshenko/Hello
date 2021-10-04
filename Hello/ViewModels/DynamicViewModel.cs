@@ -38,7 +38,7 @@ namespace Hello.ViewModels
         public bool CheckSwitch
         {
             get => _checkSwitch;
-            private set
+            set
             {
                 Set(ref _checkSwitch, value);
                 ChangeTextSwitch(value);

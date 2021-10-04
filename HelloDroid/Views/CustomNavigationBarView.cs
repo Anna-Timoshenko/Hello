@@ -4,13 +4,12 @@ using Android.Util;
 using Android.Views;
 using Android.Widget;
 using Softeq.XToolkit.Bindings;
-using System;
 using System.Windows.Input;
 
 namespace HelloDroid.Views
 {
     [Register("HelloDroid.Views.CustomNavigationBarView")]
-    public class CustomNavigationBarView : LinearLayout
+    public class CustomNavigationBarView : FrameLayout
     {
         private TextView _textTitle;
         private Button _buttonRight;
@@ -30,11 +29,6 @@ namespace HelloDroid.Views
         {
             Init(context);
         }
-
-        public CustomNavigationBarView(IntPtr handle, JniHandleOwnership owner) : base(handle, owner)
-        {
-        }
-
         private void Init(Context context)
         {
             Inflate(context, Resource.Layout.view_navigation_bar, this);
@@ -55,25 +49,19 @@ namespace HelloDroid.Views
             _textTitle.Visibility = ViewStates.Visible;
         }
 
-        public void SetButtonRight(string label, ICommand command = null)
+        public void SetButtonRight(string label, ICommand command)
         {
             _buttonRight.Text = label;
             _buttonRight.Visibility = ViewStates.Visible;
 
-            if (command != null)
-            {
-                _buttonRight.SetCommand(nameof(_buttonRight.Click), command);
-            }
+            _buttonRight.SetCommand(nameof(_buttonRight.Click), command);
         }
 
-        public void SetButtonClose(ICommand command = null)
+        public void SetButtonClose(ICommand command)
         {
             _buttonClose.Visibility = ViewStates.Visible;
 
-            if (command != null)
-            {
-                _buttonClose.SetCommand(nameof(_buttonClose.Click), command);
-            }
+            _buttonClose.SetCommand(nameof(_buttonClose.Click), command);
         }
     }
 }
