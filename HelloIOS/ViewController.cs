@@ -11,8 +11,12 @@ namespace HelloIOS
     {
         public ViewController(IntPtr handle) : base(handle)
         {
-            //LabelH.Text = ViewModel.HelloText;
-            this.Bind(() => ViewModel.HelloText, () => LabelH.Text);
+        }
+        
+        public override void ViewDidLoad()
+        {
+            base.ViewDidLoad();
+            LabelH.Text = ViewModel.HelloText;
         }
     }
 }
