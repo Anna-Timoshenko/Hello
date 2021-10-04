@@ -21,10 +21,13 @@ namespace Hello.ViewModels
             Counter = 100;
             IncrementCommand = new RelayCommand(Increment);
             DecrementCommand = new RelayCommand(Decrement);
+            NavigateCommandBack = new RelayCommand(NavigateBack);
         }
 
         public ICommand IncrementCommand { get; }
         public ICommand DecrementCommand { get; }
+        public ICommand NavigateCommandBack { get; }
+        public string Title => "Dymanic page";
 
         public string TextSwitch
         {
@@ -72,6 +75,11 @@ namespace Hello.ViewModels
         private string ReverseText(string text)
         {
             return new string(text.ToCharArray().Reverse().ToArray());
+        }
+
+        private void NavigateBack()
+        {
+            _pageNavigationService.GoBack();
         }
     }
 }

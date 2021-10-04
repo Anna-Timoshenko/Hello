@@ -28,6 +28,7 @@ namespace Hello.ViewModels
         public ICollection<PetViewModel> Pets { get => _pets; }
         public string Title => "Pair Collar With a Pet";
         public string TextChoose => "Please Choose Which Pet Should Use This Collar";
+        public string TextForRightButton => "Done";
         public string TextWitckCollars => "Pets With Collars";
 
         private void NavigateBack()

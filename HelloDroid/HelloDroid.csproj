@@ -69,6 +69,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MainApplication.cs" />
     <Compile Include="Views\Collections\DogCollectionViewHolder.cs" />
+    <Compile Include="Views\CustomNavigationBarView.cs" />
     <Compile Include="Views\DynamicActivity.cs" />
     <Compile Include="Views\NavigationActivity.cs" />
     <Compile Include="Views\SplashActivity.cs" />
@@ -155,6 +156,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\activity_dynamic.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\view_navigation_bar.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

@@ -9,39 +9,10 @@
     android:paddingEnd="16dp"
     android:background="@android:color/white">
 
-    <LinearLayout
-        android:id="@+id/activity_add_collar_pair_linearLayout_top"
-        android:orientation="horizontal"
+    <HelloDroid.Views.CustomNavigationBarView
+        android:id="@+id/activity_add_collar_pair_navigation_bar"
         android:layout_width="match_parent"
-        android:layout_height="55dp">
-
-        <ImageButton
-            android:id="@+id/activity_add_collar_pair_imageButton_close"
-            android:src="@drawable/ic_close"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:background="@android:color/transparent"/>
-
-        <TextView
-            android:id="@+id/activity_add_collar_pair_textView_title"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginStart="20dp"
-            android:gravity="center_vertical"
-            android:layout_weight="1"
-            android:text="1"
-            android:textSize="17sp"
-            style="@style/TextViewPrimary"/>
-
-        <Button
-            android:id="@+id/activity_add_collar_pair_button_done"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            style="@style/NotCapsButton"
-            android:text="Done"/>
-
-    </LinearLayout>
+        android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/activity_add_collar_pair_textView_choose"

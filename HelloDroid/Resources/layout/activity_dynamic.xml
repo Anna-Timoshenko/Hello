@@ -1,78 +1,95 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/activity_dynamyc_relativeLayout"
+    android:id="@+id/activity_dynamyc_linearLayout"
+    android:orientation="vertical"
+    android:minWidth="25px"
+    android:minHeight="25px"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center_vertical">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/activity_dynamyc_textView_switch"
-        android:text="Text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        style="@style/TextViewPrimary"
-        android:textSize="20sp" />
-
-    <Switch
-        android:id="@+id/activity_dynamyc_switch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/activity_dynamyc_textView_switch"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:id="@+id/activity_dynamyc_textView_counter"
-        android:text="Text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/activity_dynamyc_switch"
-        android:layout_marginTop="50dp"
-        android:layout_centerHorizontal="true"
-        style="@style/TextViewPrimary"
-        android:textSize="20sp" />
-
-    <LinearLayout
-        android:id="@+id/activity_dynamyc_linearLayout"
-        android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/activity_dynamyc_textView_counter"
-        android:layout_centerHorizontal="true">
-
-        <Button
-            android:id="@+id/activity_dynamyc_button_plus"
-            android:text="+"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <Button
-            android:id="@+id/activity_dynamyc_button_minus"
-            android:text="-"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/activity_dynamyc_textView_output"
-        android:text="Text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/activity_dynamyc_linearLayout"
-        android:layout_marginTop="50dp"
-        android:layout_centerHorizontal="true"
-        style="@style/TextViewPrimary"
-        android:textSize="20sp" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/activity_dynamyc_textInputEditText"
+    <HelloDroid.Views.CustomNavigationBarView
+        android:id="@+id/activity_dynamyc_navigation_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/activity_dynamyc_textView_output"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="50dp"
-        android:maxLength="20" />
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"/>
 
-</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/activity_dynamyc_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/activity_dynamyc_textView_switch"
+            android:text="Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            style="@style/TextViewPrimary"
+            android:textSize="20sp" />
+
+        <Switch
+            android:id="@+id/activity_dynamyc_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_dynamyc_textView_switch"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/activity_dynamyc_textView_counter"
+            android:text="Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_dynamyc_switch"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            style="@style/TextViewPrimary"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:id="@+id/activity_dynamyc_linearLayout"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_dynamyc_textView_counter"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/activity_dynamyc_button_plus"
+                android:text="+"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/activity_dynamyc_button_minus"
+                android:text="-"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_dynamyc_textView_output"
+            android:text="Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_dynamyc_linearLayout"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            style="@style/TextViewPrimary"
+            android:textSize="20sp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/activity_dynamyc_textInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_dynamyc_textView_output"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="50dp"
+            android:maxLength="20" />
+
+    </RelativeLayout>
+
+</LinearLayout>
