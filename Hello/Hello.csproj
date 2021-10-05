@@ -10,9 +10,4 @@
   <ItemGroup>
     <PackageReference Include="Softeq.XToolkit.WhiteLabel" Version="2.0.0-beta8" />
   </ItemGroup>
-  <ItemGroup>
-    <Reference Include="Mono.Android">
-      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\ReferenceAssemblies\Microsoft\Framework\MonoAndroid\v11.0\Mono.Android.dll</HintPath>
-    </Reference>
-  </ItemGroup>
 </Project>
