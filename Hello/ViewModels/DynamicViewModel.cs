@@ -1,4 +1,5 @@
 ﻿using Softeq.XToolkit.Common.Commands;
+using Softeq.XToolkit.Common.Interfaces;
 using Softeq.XToolkit.WhiteLabel.Mvvm;
 using Softeq.XToolkit.WhiteLabel.Navigation;
 using System.Linq;
@@ -8,17 +9,17 @@ namespace Hello.ViewModels
 {
     public class DynamicViewModel : ViewModelBase
     {
-        private string _textSwitch;
-        private readonly IPageNavigationService _pageNavigationService;
         private bool _checkSwitch;
         private int _counter;
-        private string _textOutput = string.Empty;
+        private string _textSwitch;
+        private string _textOutput;
+        private readonly IPageNavigationService _pageNavigationService;
+        private readonly IInternalSettings _internalSettings;
 
-        public DynamicViewModel(IPageNavigationService pageNavigationService)
+        public DynamicViewModel(IPageNavigationService pageNavigationService, IInternalSettings internalSettings)
         {
+            _internalSettings = internalSettings;
             _pageNavigationService = pageNavigationService;
-            CheckSwitch = true;
-            Counter = 100;
             IncrementCommand = new RelayCommand(Increment);
             DecrementCommand = new RelayCommand(Decrement);
             NavigateCommandBack = new RelayCommand(NavigateBack);
@@ -31,15 +32,20 @@ namespace Hello.ViewModels
 
         public string TextSwitch
         {
-            get => _textSwitch;
-            private set => Set(ref _textSwitch, value);
+            get => _internalSettings.GetValueOrDefault("TextSwitch", "ON");
+            private set
+            {
+                _internalSettings.AddOrUpdateValue("TextSwitch", value);
+                Set(ref _textSwitch, value);
+            }
         }
 
         public bool CheckSwitch
         {
-            get => _checkSwitch;
+            get => _internalSettings.GetValueOrDefault("CheckSwitch", true);
             set
             {
+                _internalSettings.AddOrUpdateValue("CheckSwitch", value);
                 Set(ref _checkSwitch, value);
                 ChangeTextSwitch(value);
             }
@@ -47,14 +53,23 @@ namespace Hello.ViewModels
 
         public int Counter
         {
-            get => _counter;
-            private set => Set(ref _counter, value);
+            get => _internalSettings.GetValueOrDefault("Counter", 100);
+            private set
+            {
+                _internalSettings.AddOrUpdateValue("Counter", value);
+                Set(ref _counter, value);
+            }
         }
 
         public string TextOutput
         {
-            get => _textOutput;
-            private set => Set(ref _textOutput, ReverseText(value));
+            get => _internalSettings.GetValueOrDefault("TextOutput", string.Empty);
+            private set
+            {
+                var textReverse = ReverseText(value);
+                _internalSettings.AddOrUpdateValue("TextOutput", textReverse);
+                Set(ref _textOutput, ReverseText(textReverse));
+            }
         }
 
         private void ChangeTextSwitch(bool check)

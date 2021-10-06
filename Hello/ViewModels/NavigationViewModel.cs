@@ -1,6 +1,8 @@
 ﻿using Softeq.XToolkit.Common.Commands;
+using Softeq.XToolkit.Common.Interfaces;
 using Softeq.XToolkit.WhiteLabel.Mvvm;
 using Softeq.XToolkit.WhiteLabel.Navigation;
+using Softeq.XToolkit.WhiteLabel.Services;
 using System.Windows.Input;
 
 namespace Hello.ViewModels

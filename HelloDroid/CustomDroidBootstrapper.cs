@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Reflection;
 using Softeq.XToolkit.Common.Extensions;
 using Softeq.XToolkit.Common.Interfaces;
@@ -14,6 +13,7 @@ namespace HelloDroid
         protected override void ConfigureIoc(IContainerBuilder builder)
         {
             builder.Singleton<JsonSerializer, IJsonSerializer>();
+            builder.Singleton<InternalSettings, IInternalSettings>();
         }
 
         protected override IList<Assembly> SelectAssemblies()
