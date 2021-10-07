@@ -1,8 +1,6 @@
 ﻿using Softeq.XToolkit.Common.Commands;
-using Softeq.XToolkit.Common.Interfaces;
 using Softeq.XToolkit.WhiteLabel.Mvvm;
 using Softeq.XToolkit.WhiteLabel.Navigation;
-using Softeq.XToolkit.WhiteLabel.Services;
 using System.Windows.Input;
 
 namespace Hello.ViewModels
@@ -23,9 +21,9 @@ namespace Hello.ViewModels
         public ICommand NavigateCommandAddCollar { get; }
         public ICommand NavigateCommandDynamic { get; }
 
-        public string TextButtomHello => "Go Hello world";
-        public string TextButtomAddCollar => "Go add collar pair";
-        public string TextButtomDynamic => "Go dynamic page";
+        public string TextButtonHello => "Go Hello world";
+        public string TextButtonAddCollar => "Go add collar pair";
+        public string TextButtonDynamic => "Go dynamic page";
 
         public override void OnInitialize()
         {
