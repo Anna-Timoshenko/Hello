@@ -11,7 +11,6 @@ namespace Hello.ViewModels
     {
         private const string CheckSwitchKey = "CheckSwitch";
         private const string CounterKey = "Counter";
-        private const string TextOutputKey = "TextOutput";
         private const string TextInputKey = "TextInput";
         private const string TextSwitchOn = "ON";
         private const string TextSwitchOff = "OFF";
@@ -38,10 +37,11 @@ namespace Hello.ViewModels
         {
             base.OnInitialize();
 
-            CheckSwitch = _internalSettings.GetValueOrDefault(CheckSwitchKey, true);
-            Counter = _internalSettings.GetValueOrDefault(CounterKey, DefaultCounter);
-            TextOutput = _internalSettings.GetValueOrDefault(TextOutputKey, string.Empty);
-            TextInput = _internalSettings.GetValueOrDefault(TextOutputKey, string.Empty);
+            _checkSwitch = _internalSettings.GetValueOrDefault(CheckSwitchKey, true);
+            ChangeTextSwitch(_checkSwitch);
+            _counter = _internalSettings.GetValueOrDefault(CounterKey, DefaultCounter);
+            _textInput = _internalSettings.GetValueOrDefault(TextInputKey, string.Empty);
+            _textOutput = ReverseText(_textInput);
         }
 
         public ICommand IncrementCommand { get; }
@@ -60,8 +60,11 @@ namespace Hello.ViewModels
             get => _checkSwitch;
             set
             {
-                _internalSettings.AddOrUpdateValue(CheckSwitchKey, value);
-                Set(ref _checkSwitch, value);
+                if (Set(ref _checkSwitch, value))
+                {
+                    _internalSettings.AddOrUpdateValue(CheckSwitchKey, value);
+                }
+                
                 ChangeTextSwitch(value);
             }
         }
@@ -71,19 +74,17 @@ namespace Hello.ViewModels
             get => _counter;
             private set
             {
-                _internalSettings.AddOrUpdateValue(CounterKey, value);
-                Set(ref _counter, value);
+                if (Set(ref _counter, value))
+                {
+                    _internalSettings.AddOrUpdateValue(CounterKey, value);
+                }
             }
         }
 
         public string TextOutput
         {
             get => _textOutput;
-            private set
-            {
-                _internalSettings.AddOrUpdateValue(TextOutputKey, value);
-                Set(ref _textOutput, value);
-            }
+            private set => Set(ref _textOutput, value);
         }
 
         public string TextInput
@@ -91,8 +92,11 @@ namespace Hello.ViewModels
             get => _textInput;
             set
             {
-                _internalSettings.AddOrUpdateValue(TextInputKey, value);
-                Set(ref _textInput, value);
+                if (Set(ref _textInput, value))
+                {
+                    _internalSettings.AddOrUpdateValue(TextInputKey, value);
+                }
+
                 TextOutput = ReverseText(value);
             }
         }
