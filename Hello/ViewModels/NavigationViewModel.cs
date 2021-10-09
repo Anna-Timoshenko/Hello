@@ -21,9 +21,9 @@ namespace Hello.ViewModels
         public ICommand NavigateCommandAddCollar { get; }
         public ICommand NavigateCommandDynamic { get; }
 
-        public string TextButtomHello => "Go Hello world";
-        public string TextButtomAddCollar => "Go add collar pair";
-        public string TextButtomDynamic => "Go dynamic page";
+        public string TextButtonHello => "Go Hello world";
+        public string TextButtonAddCollar => "Go add collar pair";
+        public string TextButtonDynamic => "Go dynamic page";
 
         public override void OnInitialize()
         {
