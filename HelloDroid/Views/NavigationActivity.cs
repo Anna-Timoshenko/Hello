@@ -21,15 +21,15 @@ namespace HelloDroid.Views
 
             _helloButton = FindViewById<Button>(Resource.Id.activity_navigation_button_hello);
             _helloButton.SetCommand(ViewModel.NavigateCommandHello);
-            _helloButton.Text = ViewModel.TextButtomHello;
+            _helloButton.Text = ViewModel.TextButtonHello;
 
             _addCollarButton = FindViewById<Button>(Resource.Id.activity_navigation_button_add_collar);
             _addCollarButton.SetCommand(ViewModel.NavigateCommandAddCollar);
-            _addCollarButton.Text = ViewModel.TextButtomAddCollar;
+            _addCollarButton.Text = ViewModel.TextButtonAddCollar;
 
             _dynamicButton = FindViewById<Button>(Resource.Id.activity_navigation_button_dynamic_page);
             _dynamicButton.SetCommand(ViewModel.NavigateCommandDynamic);
-            _dynamicButton.Text = ViewModel.TextButtomDynamic;
+            _dynamicButton.Text = ViewModel.TextButtonDynamic;
         }
     }
 }

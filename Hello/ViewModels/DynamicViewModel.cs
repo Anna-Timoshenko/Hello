@@ -9,10 +9,18 @@ namespace Hello.ViewModels
 {
     public class DynamicViewModel : ViewModelBase
     {
+        private const string CheckSwitchKey = "CheckSwitch";
+        private const string CounterKey = "Counter";
+        private const string TextInputKey = "TextInput";
+        private const string TextSwitchOn = "ON";
+        private const string TextSwitchOff = "OFF";
+        private const int DefaultCounter = 100;
+
         private bool _checkSwitch;
         private int _counter;
         private string _textSwitch;
         private string _textOutput;
+        private string _textInput;
         private readonly IPageNavigationService _pageNavigationService;
         private readonly IInternalSettings _internalSettings;
 
@@ -25,56 +33,77 @@ namespace Hello.ViewModels
             NavigateCommandBack = new RelayCommand(NavigateBack);
         }
 
+        public override void OnInitialize()
+        {
+            base.OnInitialize();
+
+            _checkSwitch = _internalSettings.GetValueOrDefault(CheckSwitchKey, true);
+            ChangeTextSwitch(_checkSwitch);
+            _counter = _internalSettings.GetValueOrDefault(CounterKey, DefaultCounter);
+            _textInput = _internalSettings.GetValueOrDefault(TextInputKey, string.Empty);
+            _textOutput = ReverseText(_textInput);
+        }
+
         public ICommand IncrementCommand { get; }
         public ICommand DecrementCommand { get; }
         public ICommand NavigateCommandBack { get; }
-        public string Title => "Dymanic page";
+        public string Title => "Dynamic page";
 
         public string TextSwitch
         {
-            get => _internalSettings.GetValueOrDefault("TextSwitch", "ON");
-            private set
-            {
-                _internalSettings.AddOrUpdateValue("TextSwitch", value);
-                Set(ref _textSwitch, value);
-            }
+            get => _textSwitch;
+            private set => Set(ref _textSwitch, value);
         }
 
         public bool CheckSwitch
         {
-            get => _internalSettings.GetValueOrDefault("CheckSwitch", true);
+            get => _checkSwitch;
             set
             {
-                _internalSettings.AddOrUpdateValue("CheckSwitch", value);
-                Set(ref _checkSwitch, value);
+                if (Set(ref _checkSwitch, value))
+                {
+                    _internalSettings.AddOrUpdateValue(CheckSwitchKey, value);
+                }
+
                 ChangeTextSwitch(value);
             }
         }
 
         public int Counter
         {
-            get => _internalSettings.GetValueOrDefault("Counter", 100);
+            get => _counter;
             private set
             {
-                _internalSettings.AddOrUpdateValue("Counter", value);
-                Set(ref _counter, value);
+                if (Set(ref _counter, value))
+                {
+                    _internalSettings.AddOrUpdateValue(CounterKey, value);
+                }
             }
         }
 
         public string TextOutput
         {
-            get => _internalSettings.GetValueOrDefault("TextOutput", string.Empty);
-            private set
+            get => _textOutput;
+            private set => Set(ref _textOutput, value);
+        }
+
+        public string TextInput
+        {
+            get => _textInput;
+            set
             {
-                var textReverse = ReverseText(value);
-                _internalSettings.AddOrUpdateValue("TextOutput", textReverse);
-                Set(ref _textOutput, ReverseText(textReverse));
+                if (Set(ref _textInput, value))
+                {
+                    _internalSettings.AddOrUpdateValue(TextInputKey, value);
+                }
+
+                TextOutput = ReverseText(value);
             }
         }
 
         private void ChangeTextSwitch(bool check)
         {
-            TextSwitch = check ? "ON" : "OFF";
+            TextSwitch = check ? TextSwitchOn : TextSwitchOff;
         }
 
         private void Increment()
