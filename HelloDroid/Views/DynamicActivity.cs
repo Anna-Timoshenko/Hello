@@ -56,7 +56,7 @@ namespace HelloDroid.Views
             this.Bind(() => ViewModel.TextSwitch, () => _textSwitch.Text);
             this.Bind(() => ViewModel.Counter, () => _textCounter!.Text, IntToStringConverter.Instance);
             this.Bind(() => ViewModel.TextOutput, () => _textOutput!.Text);
-            this.Bind(() => ViewModel.TextOutput, () => _editTextInput!.Text, BindingMode.TwoWay);
+            this.Bind(() => ViewModel.TextInput, () => _editTextInput!.Text, BindingMode.TwoWay);
         }
     }
 }
