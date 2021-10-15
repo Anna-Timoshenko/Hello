@@ -20,28 +20,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="gD2-Ue-OIJ">
-                                <rect key="frame" x="16" y="52" width="343" height="50"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMw-vT-Cho">
-                                        <rect key="frame" x="0.0" y="0.0" width="129.66666666666666" height="50"/>
-                                        <state key="normal" title="Generate"/>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JU4-tP-Vnt">
-                                        <rect key="frame" x="129.66666666666666" y="0.0" width="83.666666666666657" height="50"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8o-EI-1Db">
-                                        <rect key="frame" x="213.33333333333337" y="0.0" width="129.66666666666663" height="50"/>
-                                        <state key="normal" title="Generate"/>
-                                    </button>
-                                </subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HIe-Mk-ZUp" customClass="NaviView">
+                                <rect key="frame" x="16" y="44" width="343" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="lgz-P3-SXB"/>
+                                    <constraint firstAttribute="height" constant="44" id="NKh-mM-q7z"/>
                                 </constraints>
-                            </stackView>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMt-OB-KXd">
                                 <rect key="frame" x="66" y="125.99999999999999" width="243" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -75,18 +60,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="CQC-KV-4Dx" firstAttribute="leading" secondItem="h2V-wJ-O8b" secondAttribute="leadingMargin" id="1XN-F1-NI2"/>
+                            <constraint firstItem="jMt-OB-KXd" firstAttribute="top" secondItem="HIe-Mk-ZUp" secondAttribute="bottom" constant="38" id="4cE-qN-A78"/>
                             <constraint firstItem="CQC-KV-4Dx" firstAttribute="trailing" secondItem="h2V-wJ-O8b" secondAttribute="trailingMargin" id="7Dx-j9-kWY"/>
                             <constraint firstItem="lGF-VW-tBH" firstAttribute="leading" secondItem="h2V-wJ-O8b" secondAttribute="leadingMargin" id="7a9-iK-NiI"/>
                             <constraint firstItem="PR7-gl-R8q" firstAttribute="leading" secondItem="h2V-wJ-O8b" secondAttribute="leadingMargin" id="9pd-yG-1Th"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jMt-OB-KXd" secondAttribute="trailing" constant="50" id="Bs9-Tv-2EN"/>
-                            <constraint firstItem="gD2-Ue-OIJ" firstAttribute="leading" secondItem="h2V-wJ-O8b" secondAttribute="leadingMargin" id="KFn-ii-p26"/>
-                            <constraint firstItem="jMt-OB-KXd" firstAttribute="top" secondItem="gD2-Ue-OIJ" secondAttribute="bottom" constant="24" id="Lua-IS-m0f"/>
                             <constraint firstItem="CQC-KV-4Dx" firstAttribute="trailing" secondItem="h2V-wJ-O8b" secondAttribute="trailingMargin" id="ML4-d6-ncM"/>
                             <constraint firstItem="jMt-OB-KXd" firstAttribute="leading" secondItem="h2V-wJ-O8b" secondAttribute="leadingMargin" constant="50" id="N1x-St-1gH"/>
-                            <constraint firstItem="gD2-Ue-OIJ" firstAttribute="top" secondItem="7ir-mi-DUW" secondAttribute="bottom" constant="8" id="QgT-a2-zqQ"/>
+                            <constraint firstItem="HIe-Mk-ZUp" firstAttribute="trailing" secondItem="h2V-wJ-O8b" secondAttribute="trailingMargin" id="R0e-I5-3QQ"/>
+                            <constraint firstItem="HIe-Mk-ZUp" firstAttribute="top" secondItem="7ir-mi-DUW" secondAttribute="bottom" id="UGK-wl-CBL"/>
                             <constraint firstItem="CQC-KV-4Dx" firstAttribute="top" secondItem="PR7-gl-R8q" secondAttribute="bottom" constant="33.670000000000002" id="bBQ-kc-r0L"/>
+                            <constraint firstItem="HIe-Mk-ZUp" firstAttribute="leading" secondItem="h2V-wJ-O8b" secondAttribute="leadingMargin" id="cwh-VK-cmx"/>
                             <constraint firstItem="PR7-gl-R8q" firstAttribute="top" secondItem="jMt-OB-KXd" secondAttribute="bottom" constant="24" id="esk-Ug-T0K"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="gD2-Ue-OIJ" secondAttribute="trailing" id="fhg-Eu-pmH"/>
                             <constraint firstItem="jWR-pt-6fn" firstAttribute="leading" secondItem="h2V-wJ-O8b" secondAttribute="leadingMargin" id="ft5-Wq-bpA"/>
                             <constraint firstItem="lGF-VW-tBH" firstAttribute="top" secondItem="CQC-KV-4Dx" secondAttribute="bottom" constant="30" id="khl-Xa-UKi"/>
                             <constraint firstItem="jWR-pt-6fn" firstAttribute="top" secondItem="lGF-VW-tBH" secondAttribute="bottom" constant="12" id="kir-0o-PDj"/>
@@ -97,13 +82,11 @@
                     </view>
                     <connections>
                         <outlet property="ButtonAdd" destination="PR7-gl-R8q" id="Dp9-gv-d7X"/>
-                        <outlet property="ButtonClose" destination="jMw-vT-Cho" id="nK7-Ps-Wwe"/>
-                        <outlet property="ButtonDone" destination="f8o-EI-1Db" id="4Yb-f2-Cq3"/>
+                        <outlet property="NavigationBarView" destination="HIe-Mk-ZUp" id="lOi-wM-bkF"/>
                         <outlet property="TableViewAddPet" destination="CQC-KV-4Dx" id="WLR-uQ-NPt"/>
                         <outlet property="TableViewPetsWithCollars" destination="jWR-pt-6fn" id="cEq-Wf-4Ao"/>
                         <outlet property="TextChoose" destination="jMt-OB-KXd" id="JpH-UJ-Zzj"/>
                         <outlet property="TextPetsWithCollars" destination="lGF-VW-tBH" id="J7R-G8-jf9"/>
-                        <outlet property="TitleBar" destination="JU4-tP-Vnt" id="auh-no-Q2u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8CU-lq-B4j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

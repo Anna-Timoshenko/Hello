@@ -16,10 +16,7 @@ namespace HelloIOS.ViewControllers
 		UIKit.UIButton ButtonAdd { get; set; }
 
 		[Outlet]
-		UIKit.UIButton ButtonClose { get; set; }
-
-		[Outlet]
-		UIKit.UIButton ButtonDone { get; set; }
+		HelloIOS.Views.NaviView NavigationBarView { get; set; }
 
 		[Outlet]
 		UIKit.UITableView TableViewAddPet { get; set; }
@@ -32,9 +29,6 @@ namespace HelloIOS.ViewControllers
 
 		[Outlet]
 		UIKit.UILabel TextPetsWithCollars { get; set; }
-
-		[Outlet]
-		UIKit.UILabel TitleBar { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
@@ -43,19 +37,14 @@ namespace HelloIOS.ViewControllers
 				ButtonAdd = null;
 			}
 
-			if (ButtonClose != null) {
-				ButtonClose.Dispose ();
-				ButtonClose = null;
-			}
-
-			if (ButtonDone != null) {
-				ButtonDone.Dispose ();
-				ButtonDone = null;
-			}
-
 			if (TableViewAddPet != null) {
 				TableViewAddPet.Dispose ();
 				TableViewAddPet = null;
+			}
+
+			if (TableViewPetsWithCollars != null) {
+				TableViewPetsWithCollars.Dispose ();
+				TableViewPetsWithCollars = null;
 			}
 
 			if (TextChoose != null) {
@@ -63,19 +52,14 @@ namespace HelloIOS.ViewControllers
 				TextChoose = null;
 			}
 
-			if (TitleBar != null) {
-				TitleBar.Dispose ();
-				TitleBar = null;
-			}
-
 			if (TextPetsWithCollars != null) {
 				TextPetsWithCollars.Dispose ();
 				TextPetsWithCollars = null;
 			}
 
-			if (TableViewPetsWithCollars != null) {
-				TableViewPetsWithCollars.Dispose ();
-				TableViewPetsWithCollars = null;
+			if (NavigationBarView != null) {
+				NavigationBarView.Dispose ();
+				NavigationBarView = null;
 			}
 		}
 	}

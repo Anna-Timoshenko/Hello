@@ -17,6 +17,8 @@ namespace HelloIOS.ViewControllers
         {
             base.ViewDidLoad();
 
+            NavigationController.NavigationBar.Hidden = true;
+
             NavigationButtonHello.SetTitle(ViewModel.TextButtonHello, UIControlState.Normal);
             NavigationButtonHello.SetCommand(ViewModel.NavigateCommandHello);
 

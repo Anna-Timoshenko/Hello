@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -78,6 +78,7 @@
     <Reference Include="Xamarin.iOS" />
     <Reference Include="System.Numerics" />
     <Reference Include="System.Numerics.Vectors" />
+    <Reference Include="MonoTouch.Dialog-1" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
@@ -142,6 +143,7 @@
     <InterfaceDefinition Include="ViewControllers\AddCollarPairStoryboard.storyboard" />
     <InterfaceDefinition Include="Views\PetTableViewCell.xib" />
     <InterfaceDefinition Include="ViewControllers\DynamicPageStoryboard.storyboard" />
+    <InterfaceDefinition Include="Views\NaviView.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -172,6 +174,10 @@
     <Compile Include="ViewControllers\DynamicPageViewController.cs" />
     <Compile Include="ViewControllers\DynamicPageViewController.designer.cs">
       <DependentUpon>DynamicPageViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NaviView.cs" />
+    <Compile Include="Views\NaviView.designer.cs">
+      <DependentUpon>Views\NaviView.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

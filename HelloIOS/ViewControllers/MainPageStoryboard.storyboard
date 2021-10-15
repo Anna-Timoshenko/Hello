@@ -20,6 +20,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DSM-iW-s6e" customClass="NaviView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="X5I-qb-Aj9"/>
+                                </constraints>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6Q-R9-SH3">
                                 <rect key="frame" x="186" y="437.5" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -31,15 +38,19 @@
                         <constraints>
                             <constraint firstItem="U6Q-R9-SH3" firstAttribute="centerY" secondItem="8UE-AY-TiG" secondAttribute="centerY" id="2rE-Ha-kNP"/>
                             <constraint firstItem="U6Q-R9-SH3" firstAttribute="centerX" secondItem="8UE-AY-TiG" secondAttribute="centerX" id="Mea-4T-D8v"/>
+                            <constraint firstItem="DSM-iW-s6e" firstAttribute="leading" secondItem="8UE-AY-TiG" secondAttribute="leading" id="Vl5-Ab-Qd8"/>
+                            <constraint firstItem="DSM-iW-s6e" firstAttribute="top" secondItem="EFb-gL-agY" secondAttribute="bottom" id="WFI-7z-krM"/>
+                            <constraint firstAttribute="trailing" secondItem="DSM-iW-s6e" secondAttribute="trailing" id="gyV-5Y-iLw"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="LabelHello" destination="U6Q-R9-SH3" id="xUd-Pw-cdj"/>
+                        <outlet property="NavigationView" destination="DSM-iW-s6e" id="5L2-2a-NPz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RKJ-2r-xZf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-16" y="1"/>
+            <point key="canvasLocation" x="-17.39130434782609" y="0.6696428571428571"/>
         </scene>
     </scenes>
     <resources>

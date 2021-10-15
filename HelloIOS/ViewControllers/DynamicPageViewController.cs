@@ -22,6 +22,9 @@ namespace HelloIOS.ViewControllers
             ButtonMinus.SetCommand(ViewModel.DecrementCommand);
             ButtonPlus.SetCommand(ViewModel.IncrementCommand);
 
+            NavigationBarView.SetTitle(ViewModel.Title);
+            NavigationBarView.SetButtonClose(ViewModel.NavigateCommandBack);
+
             TextInput.ShouldChangeCharacters = (textField, range, replacementString) =>
             {
                 var newLength = textField.Text.Length + replacementString.Length - range.Length;

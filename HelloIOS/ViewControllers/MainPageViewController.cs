@@ -15,6 +15,9 @@ namespace HelloIOS.ViewControllers
             base.ViewDidLoad();
 
             LabelHello.Text = ViewModel.HelloText;
+
+            NavigationView.SetTitle(ViewModel.Title);
+            NavigationView.SetButtonClose(ViewModel.NavigateCommandBack);
         }
     }
 }

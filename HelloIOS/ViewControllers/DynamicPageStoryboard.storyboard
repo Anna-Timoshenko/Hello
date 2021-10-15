@@ -20,6 +20,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z9I-ok-RwY" customClass="NaviView">
+                                <rect key="frame" x="20" y="44" width="374" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="xdm-5k-ZcB"/>
+                                </constraints>
+                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="KHh-9O-PPR">
                                 <rect key="frame" x="40" y="321" width="334" height="254"/>
                                 <subviews>
@@ -75,7 +82,10 @@
                         <constraints>
                             <constraint firstItem="KHh-9O-PPR" firstAttribute="leading" secondItem="f1p-jN-vFd" secondAttribute="leadingMargin" constant="20" id="4BM-6s-R1U"/>
                             <constraint firstItem="KHh-9O-PPR" firstAttribute="centerY" secondItem="f1p-jN-vFd" secondAttribute="centerY" id="6kN-bq-cFP"/>
+                            <constraint firstItem="Z9I-ok-RwY" firstAttribute="top" secondItem="Hxj-T2-nIb" secondAttribute="bottom" id="7fI-M9-Gd1"/>
+                            <constraint firstItem="Z9I-ok-RwY" firstAttribute="trailing" secondItem="f1p-jN-vFd" secondAttribute="trailingMargin" id="9ad-kg-Rzq"/>
                             <constraint firstItem="KHh-9O-PPR" firstAttribute="centerX" secondItem="f1p-jN-vFd" secondAttribute="centerX" id="Hj3-fn-lhl"/>
+                            <constraint firstItem="Z9I-ok-RwY" firstAttribute="leading" secondItem="f1p-jN-vFd" secondAttribute="leadingMargin" id="bH5-vJ-uru"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KHh-9O-PPR" secondAttribute="trailing" constant="20" id="oxT-yj-tvo"/>
                         </constraints>
                     </view>
@@ -83,6 +93,7 @@
                         <outlet property="ButtonMinus" destination="VhH-rl-uiB" id="bKk-V7-nGn"/>
                         <outlet property="ButtonPlus" destination="YOl-lT-e7v" id="5i7-Rf-NDc"/>
                         <outlet property="Counter" destination="WGw-2K-VHR" id="Yqc-TC-bNr"/>
+                        <outlet property="NavigationBarView" destination="Z9I-ok-RwY" id="Uok-iM-toK"/>
                         <outlet property="Switch" destination="KJd-8a-lpY" id="tnU-1e-pIY"/>
                         <outlet property="TextInput" destination="Ohj-7t-zUz" id="Bcb-pg-9n0"/>
                         <outlet property="TextOutput" destination="SNd-YF-Z1U" id="y87-CJ-6uC"/>
@@ -91,7 +102,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dbp-jY-kmE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-16" y="1"/>
+            <point key="canvasLocation" x="-17.39130434782609" y="0.6696428571428571"/>
         </scene>
     </scenes>
     <resources>

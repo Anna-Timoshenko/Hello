@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using Hello.Models;
 using Hello.ViewModels;
 using HelloIOS.Views;
-using Softeq.XToolkit.Bindings;
 using Softeq.XToolkit.Bindings.iOS.Bindable;
 using Softeq.XToolkit.WhiteLabel.iOS;
 using UIKit;
@@ -20,14 +19,8 @@ namespace HelloIOS.ViewControllers
         {
             base.ViewDidLoad();
 
-            NavigationController.NavigationBar.Hidden = true;
-
-            TitleBar.Text = ViewModel.Title;
-
-            ButtonClose.SetTitle("Close", UIKit.UIControlState.Normal);
-            ButtonClose.SetCommand(ViewModel.NavigateCommandBack);
-
-            ButtonDone.SetTitle(ViewModel.TextForRightButton, UIKit.UIControlState.Normal);
+            NavigationBarView.SetTitle(ViewModel.Title);
+            NavigationBarView.SetButtonClose(ViewModel.NavigateCommandBack);
 
             TextChoose.Text = ViewModel.TextChoose;
 
@@ -46,7 +39,6 @@ namespace HelloIOS.ViewControllers
             {
                 HeightForRow = 64f,
             };
-
         }
 
         private class CustomSource : BindableTableViewSource<PetViewModel,
