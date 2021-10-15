@@ -29,6 +29,7 @@ namespace Hello.ViewModels
         {
             base.OnInitialize();
         }
+
         private void NavigateMain()
         {
             _pageNavigationService.For<MainPageViewModel>().Navigate();
