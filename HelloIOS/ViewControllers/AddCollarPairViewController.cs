@@ -1,12 +1,10 @@
 using System;
-using System.Collections.Generic;
 using Hello.Models;
 using Hello.ViewModels;
 using HelloIOS.Views;
 using Softeq.XToolkit.Bindings;
 using Softeq.XToolkit.Bindings.iOS.Bindable;
 using Softeq.XToolkit.WhiteLabel.iOS;
-using UIKit;
 
 namespace HelloIOS.ViewControllers
 {
@@ -31,10 +29,11 @@ namespace HelloIOS.ViewControllers
 
             TextChoose.Text = ViewModel.TextChoose;
 
-            ButtonAdd.SetTitle("Add New Pet", UIKit.UIControlState.Normal);
+            ButtonAdd.SetTitle(ViewModel.TextForAddButton, UIKit.UIControlState.Normal);
 
             TableViewAddPet.RegisterNibForCellReuse(PetTableViewCell.Nib, PetTableViewCell.Key);
-            TableViewAddPet.Source = new CustomSource(TableViewAddPet, ViewModel.PetsAdded)
+            TableViewAddPet.Source = new BindableTableViewSource<PetViewModel,
+                PetTableViewCell>(TableViewAddPet, ViewModel.PetsAdded)
             {
                 HeightForRow = 64f,
             };
@@ -42,20 +41,11 @@ namespace HelloIOS.ViewControllers
             TextPetsWithCollars.Text = ViewModel.TextWitckCollars;
 
             TableViewPetsWithCollars.RegisterNibForCellReuse(PetTableViewCell.Nib, PetTableViewCell.Key);
-            TableViewPetsWithCollars.Source = new CustomSource(TableViewAddPet, ViewModel.Pets)
+            TableViewPetsWithCollars.Source = new BindableTableViewSource<PetViewModel,
+                PetTableViewCell>(TableViewAddPet, ViewModel.Pets)
             {
                 HeightForRow = 64f,
             };
-
-        }
-
-        private class CustomSource : BindableTableViewSource<PetViewModel,
-                PetTableViewCell>
-        {
-            public CustomSource(UITableView tableView, IEnumerable<PetViewModel> items)
-                : base(tableView, items)
-            {
-            }
         }
     }
 }

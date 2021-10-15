@@ -18,6 +18,7 @@ namespace HelloDroid.Views
         private TextView? _textChoose;
         private TextView? _textWithCollars;
         private CustomNavigationBarView _navigationBarView;
+        private Button _buttonAdd;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -34,6 +35,9 @@ namespace HelloDroid.Views
 
             _textWithCollars = FindViewById<TextView>(Resource.Id.activity_add_collar_pair_textView_with_color);
             _textWithCollars.Text = ViewModel.TextWitckCollars;
+
+            _buttonAdd = FindViewById<Button>(Resource.Id.activity_add_collar_pair_button_add);
+            _buttonAdd.Text = ViewModel.TextForAddButton;
 
             _recyclerViewAdded = FindViewById<RecyclerView>(Resource.Id.activity_add_collar_pair_recyclerView_added);
             _recyclerViewAdded.HasFixedSize = false;

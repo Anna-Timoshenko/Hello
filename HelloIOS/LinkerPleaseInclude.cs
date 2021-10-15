@@ -6,7 +6,6 @@ using UIKit;
 
 namespace HelloIOS
 {
-
     public class LinkerPleaseInclude
     {
         public void Include(UIButton uiButton)
@@ -105,5 +104,4 @@ namespace HelloIOS
             controller.SelectedIndex = 1;
         }
     }
-
 }

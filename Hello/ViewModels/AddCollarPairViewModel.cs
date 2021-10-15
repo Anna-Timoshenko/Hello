@@ -23,13 +23,13 @@ namespace Hello.ViewModels
         }
 
         public ICommand NavigateCommandBack { get; }
-
         public ICollection<PetViewModel> PetsAdded { get => _petsAdded; }
         public ICollection<PetViewModel> Pets { get => _pets; }
         public string Title => "Pair Collar With a Pet";
         public string TextChoose => "Please Choose Which Pet Should Use This Collar";
         public string TextForRightButton => "Done";
         public string TextWitckCollars => "Pets With Collars";
+        public string TextForAddButton => "Add New Pet";
 
         private void NavigateBack()
         {
