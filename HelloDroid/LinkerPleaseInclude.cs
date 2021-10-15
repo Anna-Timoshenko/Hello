@@ -5,6 +5,7 @@ using Android.App;
 using Android.Views;
 using Android.Widget;
 using AndroidX.AppCompat.Widget;
+using AndroidX.RecyclerView.Widget;
 
 namespace HelloDroid
 {
