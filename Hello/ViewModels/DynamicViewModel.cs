@@ -64,7 +64,7 @@ namespace Hello.ViewModels
                 {
                     _internalSettings.AddOrUpdateValue(CheckSwitchKey, value);
                 }
-                
+
                 ChangeTextSwitch(value);
             }
         }
