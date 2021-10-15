@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -26,6 +26,8 @@
     <MtouchArch>x86_64</MtouchArch>
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>Apple Development: anna.timoshenko@softeq.com (CX8NUQ7T73)</CodesignKey>
+    <LangVersion>9.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -35,6 +37,7 @@
     <WarningLevel>4</WarningLevel>
     <MtouchLink>None</MtouchLink>
     <MtouchArch>x86_64</MtouchArch>
+    <LangVersion>9.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -48,6 +51,8 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
+    <MtouchLink>None</MtouchLink>
+    <LangVersion>9.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -58,6 +63,10 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchArch>ARM64</MtouchArch>
     <CodesignKey>iPhone Developer</CodesignKey>
+    <IOSDebuggerPort></IOSDebuggerPort>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <LangVersion>9.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
     <AppExtensionDebugBundleId />
@@ -69,6 +78,7 @@
     <Reference Include="Xamarin.iOS" />
     <Reference Include="System.Numerics" />
     <Reference Include="System.Numerics.Vectors" />
+    <Reference Include="MonoTouch.Dialog-1" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
@@ -122,10 +132,18 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="ViewControllers\" />
+    <Folder Include="Views\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
     <InterfaceDefinition Include="Main.storyboard" />
+    <InterfaceDefinition Include="ViewControllers\MainPageStoryboard.storyboard" />
+    <InterfaceDefinition Include="ViewControllers\NavigationPageStoryboard.storyboard" />
+    <InterfaceDefinition Include="ViewControllers\AddCollarPairStoryboard.storyboard" />
+    <InterfaceDefinition Include="Views\PetTableViewCell.xib" />
+    <InterfaceDefinition Include="ViewControllers\DynamicPageStoryboard.storyboard" />
+    <InterfaceDefinition Include="Views\NaviView.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -135,11 +153,32 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="SceneDelegate.cs" />
-    <Compile Include="ViewController.cs" />
-    <Compile Include="ViewController.designer.cs">
-      <DependentUpon>ViewController.cs</DependentUpon>
-    </Compile>
     <Compile Include="CustomIosBootstrapper.cs" />
+    <Compile Include="LinkerPleaseInclude.cs" />
+    <Compile Include="ViewControllers\MainPageViewController.cs" />
+    <Compile Include="ViewControllers\MainPageViewController.designer.cs">
+      <DependentUpon>MainPageViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\NavigationPageViewController.cs" />
+    <Compile Include="ViewControllers\NavigationPageViewController.designer.cs">
+      <DependentUpon>NavigationPageViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\AddCollarPairViewController.cs" />
+    <Compile Include="ViewControllers\AddCollarPairViewController.designer.cs">
+      <DependentUpon>AddCollarPairViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PetTableViewCell.cs" />
+    <Compile Include="Views\PetTableViewCell.designer.cs">
+      <DependentUpon>PetTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\DynamicPageViewController.cs" />
+    <Compile Include="ViewControllers\DynamicPageViewController.designer.cs">
+      <DependentUpon>DynamicPageViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NaviView.cs" />
+    <Compile Include="Views\NaviView.designer.cs">
+      <DependentUpon>Views\NaviView.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Hello\Hello.csproj">

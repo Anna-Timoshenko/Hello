@@ -1,4 +1,5 @@
 ﻿using Foundation;
+using Hello.ViewModels;
 using Softeq.XToolkit.WhiteLabel.Bootstrapper;
 using Softeq.XToolkit.WhiteLabel.Bootstrapper.Abstract;
 using Softeq.XToolkit.WhiteLabel.iOS;
@@ -19,8 +20,6 @@ namespace HelloIOS
             return result;
         }
 
-        public override UIWindow Window { get; set; }
-
         protected override IBootstrapper CreateBootstrapper()
         {
             return new CustomIosBootstrapper();
@@ -28,8 +27,9 @@ namespace HelloIOS
 
         protected override void InitializeNavigation(IContainer container)
         {
-
+            var navigationService = container.Resolve<IPageNavigationService>();
+            navigationService.Initialize(Window.RootViewController!);
+            navigationService.For<NavigationViewModel>().Navigate();
         }
     }
 }
-
